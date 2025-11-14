@@ -1,35 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Austin Warren – Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Austin Warren – Engineer • Developer • Designer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
-<body>
-  <header class="hero">
-    <h1>Austin Warren</h1>
-    <p>Engineer • Developer • Problem Solver</p>
-    <a href="#projects" class="btn">View My Projects</a>
+<body class="theme-dark">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-mark"></span>
+        <span class="brand-text">Austin&nbsp;Warren</span>
+      </div>
+
+      <nav class="nav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Short intro about who you are and what you’re into.</p>
-  </section>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-kicker">Portfolio</p>
+          <h1 class="hero-title">Austin Warren</h1>
+          <p class="hero-subtitle">Engineer • Developer • Designer</p>
+          <p class="hero-body">
+            I design and build thoughtful digital experiences with a focus on clean
+            engineering, maintainable code, and user-centered design.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn secondary">Get in Touch</a>
+          </div>
+        </div>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project Name</h3>
-      <p>Short description.</p>
-      <a href="https://github.com/austinwarren" target="_blank">View on GitHub</a>
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <p class="hero-card-label">Current Focus</p>
+            <h2 class="hero-card-title">Building reliable, elegant software.</h2>
+            <ul class="hero-card-list">
+              <li>Full-stack engineering</li>
+              <li>Clean UX and interaction design</li>
+              <li>Performance and maintainability</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container section-inner">
+        <header class="section-header">
+          <h2>About</h2>
+          <p>
+            I'm a 23 year old computer science graduate from the University of Oregon. I spend my time 
+            playing basketball, working out, gaming, or making cool projects (many of which are in progress...) Stay tuned!
+          </p>
+        </header>
+
+        <div class="grid two-column">
+          <div class="card">
+            <h3>Summary</h3>
+            <p>
+              I am an engineer, developer, and designer with a strong interest in
+              building systems that are both technically sound and intuitive to use.
+              I enjoy working across the stack, from low-level implementation to
+              polished front-end interfaces.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Skills</h3>
+            <div class="pill-group">
+              <span class="pill">Engineering</span>
+              <span class="pill">Web Development</span>
+              <span class="pill">UI Design</span>
+              <span class="pill">System Design</span>
+              <span class="pill">Problem Solving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container section-inner">
+        <header class="section-header">
+          <h2>Projects</h2>
+          <p>
+            A selection of work that highlights how I approach engineering,
+            development, and design.
+          </p>
+        </header>
+
+        <div class="grid three-column">
+          <!-- Project 1 -->
+          <article class="card project-card">
+            <h3 class="project-title">Project One</h3>
+            <p class="project-description">
+              Short description of the project, the problem it solves, and your role.
+            </p>
+            <p class="project-meta">Tech: HTML, CSS, JavaScript</p>
+            <div class="project-links">
+              <a href="#" class="project-link">View code</a>
+              <a href="#" class="project-link">Live demo</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card project-card">
+            <h3 class="project-title">Project Two</h3>
+            <p class="project-description">
+              Another example that showcases your technical depth or design thinking.
+            </p>
+            <p class="project-meta">Tech: React, Node.js</p>
+            <div class="project-links">
+              <a href="#" class="project-link">View code</a>
+              <a href="#" class="project-link">Live demo</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card project-card">
+            <h3 class="project-title">Project Three</h3>
+            <p class="project-description">
+              A project that demonstrates your ability to ship reliable and maintainable systems.
+            </p>
+            <p class="project-meta">Tech: Flutter, Firebase</p>
+            <div class="project-links">
+              <a href="#" class="project-link">View code</a>
+              <a href="#" class="project-link">Live demo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-contact">
+      <div class="container section-inner contact-inner">
+        <header class="section-header">
+          <h2>Contact</h2>
+          <p>
+            Interested in working together or discussing an idea? Feel free to reach out.
+          </p>
+        </header>
+
+        <div class="card contact-card">
+          <p class="contact-label">Email</p>
+          <a href="mailto:you@example.com" class="contact-link">you@example.com</a>
+
+          <p class="contact-label">Links</p>
+          <div class="pill-group">
+            <a href="https://github.com/austinwarren" target="_blank" class="pill-link">GitHub</a>
+            <a href="https://www.linkedin.com/in/austin-warren-081ab4211" target="_blank" class="pill-link">LinkedIn</a>
+            <a href="#" class="pill-link">Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Austin Warren. All rights reserved.</p>
     </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-    <p>LinkedIn | GitHub | etc.</p>
-  </section>
+  </footer>
 </body>
 </html>
